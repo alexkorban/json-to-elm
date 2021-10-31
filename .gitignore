@@ -1,0 +1,5 @@
+elm-stuff/
+test/node_modules/
+test/elm-stuff/
+test/generated/
+test/generated-js/

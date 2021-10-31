@@ -1,0 +1,19 @@
+{
+  "name": "json2elm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "run-tests.js",
+  "scripts": {
+    "compile-cli": "elm make src/CommandLine.elm --output generated-js/cli.js",
+    "test": "node run-tests.js"
+  },
+  "author": "",
+  "license": "UNLICENCED",
+  "devDependencies": {
+    "chalk": "^4.1.0",
+    "cross-spawn": "^7.0.3",
+    "fs-extra": "^9.1.0",
+    "glob": "^7.1.6",
+    "ramda": "^0.27.1"
+  }
+}
