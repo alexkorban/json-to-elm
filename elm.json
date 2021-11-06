@@ -3,7 +3,7 @@
     "name": "alexkorban/json-to-elm",
     "summary": "A package to help generate Elm JSON decoders and encoders from a JSON sample",
     "license": "AGPL-3.0",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "exposed-modules": [
         "ElmCodeGenerator"
     ],

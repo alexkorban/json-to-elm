@@ -1,6 +1,6 @@
 module ElmCodeGenerator exposing
     ( fromJsonSample
-    , DecoderStyle(..), ExposingSpec(..), GeneratorOptions, NamingStyle(..), Output
+    , DecoderStyle(..), ExposingSpec(..), GeneratorOptions, ImportSpec, NamingStyle(..), Output
     )
 
 {-| This package helps generate Elm JSON decoders and encoders from a JSON sample.
@@ -13,7 +13,7 @@ module ElmCodeGenerator exposing
 
 # Types
 
-@docs DecoderStyle, ExposingSpec, GeneratorOptions, NamingStyle, Output
+@docs DecoderStyle, ExposingSpec, GeneratorOptions, ImportSpec, NamingStyle, Output
 
 -}
 
@@ -45,6 +45,8 @@ type alias Path =
     Cons String
 
 
+{-| Details of an import
+-}
 type alias ImportSpec =
     { importAlias : String, exposingSpec : ExposingSpec }
 
@@ -249,7 +251,7 @@ The output consists of:
         , decoderStyle = ElmCodeGenerator.PlainDecoders
         , namingStyle = ElmCodeGenerator.NounNaming
         }
-        "{"a": 1, "b": "str"}"
+        """{"a": 1, "b": "str"}"""
 ```
 
 -}
